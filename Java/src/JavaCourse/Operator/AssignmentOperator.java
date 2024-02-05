@@ -1,6 +1,6 @@
 package JavaCourse.Operator;
 
-public class Assignment {
+public class AssignmentOperator {
     public static void main(String[] args) {
         // Assignment operator
         int a = 10;   // = is a assignment operator
