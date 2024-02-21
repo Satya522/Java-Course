@@ -1,6 +1,6 @@
-package JavaCourse;
+package JavaCourse.IntroductionOfJava;
 
-public class BasicSyntaxOfJava {
+public class BasicSyntax{
     // public class BasicSyntaxOfJava { is a class definition
     // BasicSyntaxOfJava is a class name
     // public is an access modifier

@@ -1,5 +1,5 @@
 // full details of variable types read the README.md file
-package JavaCourse;
+package JavaCourse.Variable;
 
 public class Variable {
     public static void main(String[] args) {

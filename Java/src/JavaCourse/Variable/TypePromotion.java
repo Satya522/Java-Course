@@ -1,4 +1,4 @@
-package JavaCourse;
+package JavaCourse.Variable;
 /*
  Type promotion is the automatic conversion of a smaller data type to larger data type
  Rules:

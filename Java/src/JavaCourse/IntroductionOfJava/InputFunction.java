@@ -1,4 +1,4 @@
-package JavaCourse;
+package JavaCourse.IntroductionOfJava;
 import java.util.Scanner;
 
 public class InputFunction{

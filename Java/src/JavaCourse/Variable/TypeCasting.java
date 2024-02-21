@@ -1,4 +1,4 @@
-package JavaCourse;
+package JavaCourse.Variable;
 /*
 TYPE CASTING-->
 Type casting in Java is a process of converting one data type into another. There are two types of casting in Java:

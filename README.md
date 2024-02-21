@@ -520,7 +520,7 @@ To use an array in a program, you must declare a variable to reference the array
 
 ```java
 dataType[] arrayRefVar;   // preferred way.
-or
+// or
 dataType arrayRefVar[];  // works but not preferred way.
 ```
 Note: The style `dataType[] arrayRefVar` is preferred. The style `dataType arrayRefVar[]` comes from the C/C++ language and was adopted in Java to accommodate C/C++ programmers.
