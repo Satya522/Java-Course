@@ -1,16 +1,17 @@
-# Java-Course
-This is all about java (core + Advance)  and as well as Data Structure in java 
+
+
+# Welcome to Java-Course
+This is all about java (core + Advance)  and as well as Data Structure in java
+
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Java](#java)
   - [Java Introduction](#java-introduction)
   - [Java Features](#java-features)
   - [Java History](#java-history)
   - [Java Environment Setup](#java-environment-setup)
   - [Java Basic Syntax](#java-basic-syntax)
   - [Java Object & Classes](#java-object-&-classes)
-  - [Java Basic Datatypes](#Java-Basic-Datatypes)
+  - [Java Basic Data Types](#Java-Basic-Datatypes)
   - [Java Variable Types](#java-variable-types)
   - [Java Modifier Types](#java-modifier-types)
   - [Java Basic Operators](#java-basic-operators)
@@ -44,48 +45,88 @@ This is all about java (core + Advance)  and as well as Data Structure in java
   - [Java Documentation](#java-documentation)
   - [Java Internationalization](#java-internationalization)
 
-## Introduction of Java
+## 1.Introduction of Java
 Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs 
 on a variety of platforms, such as Windows, macOS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
 
 ## Java Features
-There are given many features of Java. They are also known as java buzzwords. The Java Features given below are simple and easy to understand.
 
-### Java History
+1. **Simple**: Java is easy to learn and its syntax is clear and concise. It is based on C++ (so easier for programmers who know C++).
+
+2. **Object-Oriented**: In Java, everything is an Object which has some data and behavior. Java can be easily extended as it is based on the Object model.
+
+3. **Platform Independent**: Unlike other programming languages such as C, C++ etc which are compiled into platform specific machines. Java is guaranteed to be write-once, run-anywhere language.
+
+4. **Secured**: After compilation, Java code is converted into bytecode. This bytecode is not platform specific and it is secured because bytecode is completely different from native machine code.
+
+5. **Robust**: Java makes an effort to eliminate error prone codes by emphasizing mainly on compile time error checking and runtime checking.
+
+6. **Architecture-neutral**: There are no implementation dependent features (for example, the size of primitive types is set).
+
+7. **Portable**: Java byte code can be carried to any platform. No implementation dependent features. Everything related to storage is predefined, example: size of primitive data types
+
+8. **Dynamic**: Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry an extensive amount of run-time information that can be used to verify and resolve accesses to objects at run-time.
+
+9. **High Performance**: Java is an interpreted language, so it will never be as fast as a compiled language like C or C++. But, Java enables high performance with the use of just-in-time compiler.
+
+10. **Distributed**: Java is designed for the distributed environment of the internet, because it handles TCP/IP protocols. It also includes the concept of the stub and skeleton.
+
+11. **Multi-threaded**: With Java's multithreaded feature it is possible to write programs that can do many tasks simultaneously. The benefit of multithreading is that it utilizes the same memory and other resources to execute multiple threads at the same time, like While typing, grammatical errors are checked along.
+
+## Java History
 James Gosling initiated Java language project in June 1991 for use in one of his many set-top box projects. The language, initially called Oak after an oak tree that stood outside Gosling's office, also went by the name Green and ended up later being renamed as Java, from a list of random words. Sun released the first public implementation as Java 1.0 in 1995.
 
-### Java Environment Setup
+## Java Environment Setup
 Java programming language uses this environment to run the program. The environment consists of the development tools that allow the programmer to write programs and create files for the program in the text editor.
 
-# Installation of Java
-To install Java on your Windows system, you can follow these steps:
- 
-1. Download the latest Java Development Kit (JDK) from the official Oracle website. Choose the version that suits your needs.
+## Installation of Java Development Kit (JDK)
 
-2. Once the download is complete, run the installer.
+1. **Download JDK**: Visit the official Oracle download page [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) and download the appropriate JDK version based on your operating system.
 
-3. Follow the instructions in the installation wizard. During the installation, you will be asked to set the installation path for the JDK. Make a note of this path.
+2. **Install JDK**: Run the downloaded installer and follow the instructions to install JDK on your machine.
 
-4. After the installation is complete, you need to set the `JAVA_HOME` environment variable. This tells your system where to find the JDK. To do this, open the System Properties (right-click on Computer in the start menu, or use the System option in the Control Panel). Click on the Advanced system settings link.
+## Setting up an Integrated Development Environment (IDE)
 
-5. In the System Properties window, click on the Environment Variables button.
+1. **Download IntelliJ IDEA**: Visit the official JetBrains download page [here](https://www.jetbrains.com/idea/download/) and download the appropriate version of IntelliJ IDEA based on your operating system and requirements (Community or Ultimate).
 
-6. In the Environment Variables window, click on the New button in the System variables section.
+2. **Install IntelliJ IDEA**: Run the downloaded installer and follow the instructions to install IntelliJ IDEA on your machine.
 
-7. In the New System Variable window, enter `JAVA_HOME` as the variable name and the path to your JDK installation as the variable value, then click OK.
+## Configuring Environment Variables
 
-8. Back in the Environment Variables window, scroll down to the System variables section and find the `Path` variable. Select it and click Edit.
+1. **Set JAVA_HOME**:
 
-9. In the Edit System Variable window, add the path to the `bin` directory of your JDK installation to the end of 
-   the variable value, preceded by a semicolon (;). For example, if your JDK is installed in `C:\Program Files\Java\jdk-14.0.1`, you would add `;C:\Program Files\Java\jdk-14.0.1\bin`.
+ - **Windows**:
+  - Right-click on 'My Computer' and select 'Properties'.
+  - Click on 'Advanced System Settings'.
+  - Click on 'Environment Variables'.
+  - Click on 'New' under System variables.
+  - Enter 'JAVA_HOME' as variable name and the path to your Java JDK directory as variable value (e.g., C:\Program Files\Java\jdk-11.0.1).
 
-10. Click OK in each open window to confirm the changes.
+ - **macOS/Linux**:
+  - Open Terminal.
+  - Open .bash_profile file (or .bashrc file) in a text editor.
+  - Add the following line at the end of the file: `export JAVA_HOME=/Library/Java/Home` (replace the path with your actual JDK path).
+  - Save and close the file.
+  - Run the following command to reload the profile: `source ~/.bash_profile` (or `source ~/.bashrc`).
 
-11. To verify the installation, open a new command prompt and run the command `java -version`. If the installation was successful, this command will print the version of the Java compiler that you installed.
+2. **Update System PATH**:
 
-Please note that these instructions are for Windows. The process may vary slightly for other operating systems.
+ - **Windows**:
+  - Follow the same steps as setting JAVA_HOME until you reach 'Environment Variables'.
+  - Under 'System Variables', find the 'Path' variable, select it and click on 'Edit'.
+  - In the 'Variable value' field, append the following: `;%JAVA_HOME%\bin`.
 
-### Java Basic syntax
+ - **macOS/Linux**:
+  - Open Terminal.
+  - Open .bash_profile file (or .bashrc file) in a text editor.
+  - Add the following line at the end of the file: `export PATH=$PATH:$JAVA_HOME/bin`.
+  - Save and close the file.
+  - Run the following command to reload the profile: `source ~/.bash_profile` (or `source ~/.bashrc`).
+
+After following these steps, you should have JDK installed, your IDE set up, and environment variables configured correctly.
+
+
+## Java Basic syntax
 Java's basic syntax is the set of rules defining how a Java program is written and interpreted. Here are some key points:
 
 1. **Case Sensitivity**: Java is case-sensitive, which means the uppercase and lowercase letters are different. This means `Hello` and `hello` are different in Java.
@@ -99,6 +140,7 @@ Java's basic syntax is the set of rules defining how a Java program is written a
 5. **public static void main(String args[])**: Java program processing starts from the `main()` method which is a mandatory part of every Java program.
 
 Here is a simple example of a Java program following these syntax rules:
+
 ```java
 public class MyFirstJavaProgram {
     /* This is my first java program.
@@ -113,9 +155,6 @@ In this example, `MyFirstJavaProgram` is the class name, `main` is the method na
 
 ### java-object-&-classes
 In Java, everything is an Object. Objects are created from templates known as classes. In Java, an Object is an instance of a class.
-
-Here's a brief explanation for the `java-object-&-classes` section of your README file:
-
 
 ### Java Object & Classes
 
@@ -133,13 +172,14 @@ A class is a group of similar entities. It is a logical entity upon which we can
 
 Syntax to declare a class:
 
-# java EXAMPLE
+## Java example
+```java
 class <class_name>{  
     field;  
     method;  
 }  
-
-#### Object
+```
+## Object
 
 An object is an instance of a class. It has state and behavior. The state is represented by attributes of an object (also known as data members or instance variables). The behavior is represented by methods of an object (also known as operations).
 
@@ -150,11 +190,11 @@ ClassName object = new ClassName();
 
 Here, `ClassName` is the name of the class, and `object` is the name of the object we created.
 
-#### Example
+## Example
 
 Here is an example of a class and an object in Java:
 
-# JAVA PROGRAM
+#### JAVA PROGRAM
 ```java
 class Dog {
     String breed;
@@ -183,13 +223,13 @@ In this example, `Dog` is a class that includes fields (breed, age, color), and 
 
 This section provides a basic understanding of Java objects and classes. It can be expanded with more details and examples as needed.
 
-### java-basic-data types
+## Java Data Types
 In Java, there are eight basic data types, which are divided into two groups:
 
 - Primitive Data Types: byte, short, int, long, float, double, boolean, char
 - Non-primitive Data Types: String, Arrays, Classes, Interface, etc.
 
-#### Primitive Data Types
+## 1.Primitive Data Types
 
 - **byte**: The `byte` data type is an 8-bit signed two's complement integer. It has a minimum value of -128 and a maximum value of 127 (inclusive).
 
@@ -207,7 +247,7 @@ In Java, there are eight basic data types, which are divided into two groups:
 
 - **char**: The `char` data type is a single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
 
-#### Non-primitive Data Types
+## Non-primitive Data Types
 
 - **String**: The `String` data type is a sequence of characters. In Java, strings are immutable.
 
@@ -218,7 +258,7 @@ In Java, there are eight basic data types, which are divided into two groups:
 - **Interface**: Like a class, an interface can have methods and variables, but the methods declared in an interface are by default abstract (only method signature, nobody).
 
 
-### Java Variable Types
+## Java Variable Types
 A variable is a container that holds values that are used in java program.
 
 In Java, there are three types of variables:
@@ -228,15 +268,15 @@ In Java, there are three types of variables:
 - Static Variables
 
 
-#### Local Variables
+### Local Variables
 
 Local variables are declared in methods, constructors, or blocks. They are created when the method, constructor or block is entered and the variable will be destroyed once it exits the method, constructor, or block. Access modifiers cannot be used for local variables.
 
-#### Instance Variables
+### Instance Variables
 
 Instance variables are declared in a class, but outside a method, constructor or any block. When a space is allocated for an object in the heap, a slot for each instance variable value is created. Instance variables are created when an object is created with the use of the keyword 'new' and destroyed when the object is destroyed.
 
-#### Static Variables
+### Static Variables
 
 Static variables are also known as Class variables. These variables are declared similarly as instance variables, the difference is that static variables are declared using the `static` keyword within a class outside any method constructor or block.
 
@@ -267,16 +307,17 @@ public class VariableTypes {
 In this example, `localVar` is a local variable, `instanceVar` is an instance variable, and `staticVar` is a static variable.
 
 # Modifier
-n Java, a modifier is a keyword that you add to those definitions to change their meanings.Java language has a wide variety of modifiers, including the following:
+In Java, a modifier is a keyword that you add to those definitions to change their meanings.Java language has a wide 
+variety of modifiers, including the following:
 
-### Java Modifier Types
+## Java Modifier Types
 
 In Java, there are two types of modifiers:
 
 - Access Modifiers: public, protected, private, and default
 - Non-access Modifiers: final, abstract, static, synchronized, volatile, transient, etc.
 
-#### Access Modifiers
+### Access Modifiers
 
 - **public**: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
 
@@ -286,7 +327,7 @@ In Java, there are two types of modifiers:
 
 - **default**: The access level of a default modifier is only within the package. By default, all the classes, methods, and fields in a Java program are default if you do not specify any modifier.
 
-#### Non-access Modifiers
+### Non-access Modifiers
 
 - **final**: The `final` keyword is used to restrict the user. The java final keyword can be used in many contexts such as final variable, final method, final class.
 
@@ -303,7 +344,7 @@ In Java, there are two types of modifiers:
 
 This section provides a basic understanding of Java modifier /types. It can be expanded with more details and examples as needed.
 
-###  JAVA BASIC OPERATORS
+## JAVA BASIC OPERATORS
 
 Operators are special symbols that perform specific operations on one, two, or three operands, and then return a result.
 
@@ -316,17 +357,17 @@ Java provides a rich set of operators to manipulate variables. We can divide all
 - Assignment Operators
 - Misc Operators
 
-#### Arithmetic Operators
+### 1.Arithmetic Operators
 
 Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra. The following table lists the arithmetic operators:
 
 - **+**: Adds two operands.
 - **-**: Subtracts second operand from the first.
-- *****: Multiplies both operands.
+- **'*'**: Multiplies both operands.
 - **/**: Divides numerator by de-numerator.
 - **%**: Modulus Operator and remainder of after an integer division.
 
-#### Relational Operators
+### 2.Relational Operators
 
 There are following relational operators supported by Java language. All these operators return boolean value.
 
@@ -337,7 +378,7 @@ There are following relational operators supported by Java language. All these o
 - **>=**: Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.
 - **<=**: Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.
 
-#### Logical Operators
+### Logical Operators
 
 There are following logical operators supported by Java language.
 
@@ -345,7 +386,7 @@ There are following logical operators supported by Java language.
 - **||**: Called Logical OR Operator. If any of the two operands are non-zero, then the condition becomes true.
 - **!**: Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false.
 
-#### Bitwise Operators
+### 3.Bitwise Operators
 
 Bitwise operator works on bits and performs bit-by-bit operation.
 
@@ -357,7 +398,7 @@ Bitwise operator works on bits and performs bit-by-bit operation.
 - **>>**: Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.
 - **>>>**: Shift right zero fill operator. The left operands value is moved right by the number of bits specified by the right operand and shifted values are filled up with zeros.
 
-#### Assignment Operators
+### 4.Assignment Operators
 
 There are following assignment operators supported by Java language:
 
@@ -373,14 +414,14 @@ There are following assignment operators supported by Java language:
 - **^=**: bitwise exclusive OR and assignment operator.
 - **|=**: bitwise inclusive OR and assignment operator.
 
-#### Misc Operators
+### Misc Operators
 
 There are few other operators supported by Java Language.
 
 - **?:**: Conditional Operator. It is also known as the ternary operator. This operator consists of three operands and is used to evaluate Boolean expressions. The goal of the operator is to decide, which value should be assigned to the variable.
 - **instanceof**: The `instanceof` operator is used to check whether the object is an instance of the specified type (class or subclass or interface).
 
-### Java Loop Control
+## Java Loop Control
 In Java, loops are used to execute a set of statements repeatedly until a particular condition is satisfied. In programming languages, loops are used to execute a set of statements repeatedly until a particular condition is satisfied. Loops are used to execute a set of statements repeatedly until a particular condition is satisfied. The following types of loops are available in Java:
 
 - for loop
@@ -388,37 +429,38 @@ In Java, loops are used to execute a set of statements repeatedly until a partic
 - do-while loop
 - for-each loop
 
-#### for loop
+### for loop
 
 The Java for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.
 
 The syntax of for loop is:
-
+```java
 for(initialization;condition;incr/decr){  
 //code to be executed  
 }  
-
-#### while loop
+```
+### while loop
 
 The Java while loop is used to iterate a part of the program several times. If the number of iteration is not fixed, it is recommended to use while loop.
 
 The syntax of while loop is:
-
+```java
 while(condition){  
 //code to be executed  
 }  
+```
+### do-while loop
 
-#### do-while loop
-
-The Java do-while loop is used to iterate a part of the program several times. If the number of iteration is not fixed and you must have to execute the loop at least once, it is recommended to use do-while loop.
+The Java do-while loop is used to iterate a part of the program several times. If the number of iteration is not fixed, and you must have to execute the loop at least once, it is recommended to use do-while loop.
 
 The syntax of do-while loop is:
-
+```java
 do{  
 //code to be executed  
 }while(condition);  
 
-#### for-each loop
+```
+### for-each loop
 
 Java provides a new method forEach() to iterate the elements. It is defined in Iterable and Stream interfaces. It is a default method defined in the Iterable interface. Collection classes which extends Iterable interface can use forEach loop to iterate elements.
 
@@ -428,7 +470,7 @@ for(data_type variable : array | collection){
 //code to be executed  
 }  
 
-### Java Decision-Making
+## Java Decision-Making
 Decision-making is about deciding the order of execution of statements based on certain conditions or repeat a group 
 of statements until certain specified conditions are met. In Java, decision-making can be implemented using the following statements:
 
@@ -437,24 +479,24 @@ of statements until certain specified conditions are met. In Java, decision-maki
 - nested if statement
 - switch statement
 
-#### if statement
+## if statement
 
 The Java if statement is used to test the condition. It checks boolean condition: true or false. There are various types of if statement in Java.
 
-#### if-else statement
+## if-else statement
 
 The Java if-else statement also tests the condition. It executes the if block if condition is true otherwise else block is executed.
 
-#### nested if statement
+## nested if statement
 
 The Java nested if statement represents the if block within another if block. Here, the inner if block condition executes only when outer if block condition is true.
 
-#### switch statement
+## switch statement
 
 A switch statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each case.
 
 The syntax of switch statement is:
-
+```java
 switch(expression){  
 case value1:  
  //code to be executed;  
@@ -467,7 +509,9 @@ default:
  //code to be executed if all cases are not matched;  
 }  
 
-### Java Numbers
+```
+
+## Java Numbers
 In Java, there are four types of numbers:
 
 - Integer
@@ -475,7 +519,7 @@ In Java, there are four types of numbers:
 - Character
 - Boolean
 
-#### Integer
+## Integer
 
 Integer literals are integer values represented directly in the code without any special notation. Java supports four types of integer literals:
 
@@ -484,37 +528,37 @@ Integer literals are integer values represented directly in the code without any
 - Octal: Base 8, whose digits consists of the numbers 0 through 7; this is not used often
 - Binary: Base 2, whose digits consists of the numbers 0 and 1 (you can create binary literals in Java SE 7 and later)
 
-#### Floating-point
+## Floating-point
 
 Floating-point literals are defined using decimal numbers or scientific notation.
 
-#### Character
+## Character
 
 Character literals are represented by single quotes. Character literals are enclosed in single quotes, such as 'A' or 'c':
 
-#### Boolean
+## Boolean
 
 A boolean literal can have any of the two values: true or false.
 
-### Java Characters
+## Java Characters
 In Java, a character is represented by the `char` data type. The `char` data type is a single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
 
 The char data type is used to store characters. For example, `char letter = 'A';`.
 
-### Java Strings
+## Java Strings
 In Java, a string is a sequence of characters. For example, `String str = "Hello World";`.
 
 Strings are objects of type String, so they can be created using the String keyword and assigned to a variable of 
 the same type. String objects are immutable which means that a constant cannot be changed once it has been created.
 
-### Java Arrays 
+## Java Arrays 
 In Java, an array is a group of like-typed variables that are referred to by a common name. Arrays in Java work differently than they do in C/C++. Following are some important point about Java arrays.
 
 - In Java all arrays are dynamically allocated.(discussed below)
 - Since arrays are objects in Java, we can find their length using the object property length. This is different from C/C++ where we find length using sizeof.
 - A Java array variable can also be declared like other variables with [] after the data type.
 
-#### Declaring Array Variables
+## Declaring Array Variables
 
 To use an array in a program, you must declare a variable to reference the array, and you must specify the type of array the variable can reference. Here is the syntax for declaring an array variable:
 
@@ -525,12 +569,11 @@ dataType arrayRefVar[];  // works but not preferred way.
 ```
 Note: The style `dataType[] arrayRefVar` is preferred. The style `dataType arrayRefVar[]` comes from the C/C++ language and was adopted in Java to accommodate C/C++ programmers.
 
-#### Creating Arrays
+## Creating Arrays
 
 You can create an array by using the new operator with the following syntax:
 
 ```java
-
 arrayRefVar = new dataType[arraySize];
 ```
 The above statement does two things:
@@ -541,19 +584,16 @@ The above statement does two things:
 Declaring an array variable, creating an array, and assigning the reference of the array to the variable can be combined in one statement, as shown below:
 
 ```java
-
 dataType[] arrayRefVar = new dataType[arraySize];
 ```
 Alternatively, you can create arrays as follows:
 
 ```java
-
 dataType[] arrayRefVar = {value0, value1, ..., valuek};
 ```
 The array elements are accessed through the index. Array indices are 0-based; that is, they start from 0 to arrayRefVar.length-1.
 
 ```java
-
 dataType[] arrayRefVar = new dataType[arraySize];
 ```
 The above statement does two things:
@@ -564,18 +604,16 @@ The above statement does two things:
 Declaring an array variable, creating an array, and assigning the reference of the array to the variable can be combined in one statement, as shown below:
 
 ```java
-
 dataType[] arrayRefVar = new dataType[arraySize];
 ```
 Alternatively, you can create arrays as follows:
 
 ```java
-
 dataType[] arrayRefVar = {value0, value1, ..., valuek};
 ```
 The array elements are accessed through the index. Array indices are 0-based; that is, they start from 0 to arrayRefVar.length-1.
 
-#### Array Examples
+## Array Examples
 
 Here are some examples of declaring, creating, and initializing arrays:
 
@@ -594,7 +632,6 @@ String[] stringArray = new String[10];
 Alternatively, you can also create arrays as follows:
 
 ```java
-
 int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 };
 char[] charArray = new char[]{ 'a', 'b', 'c', 'd' };
 ```
@@ -603,15 +640,14 @@ You can also declare an array of arrays (also known as a multidimensional array)
 Here is an example of a two-dimensional array:
 
 ```java
-
 int[][] intArray = new int[10][20];
 ```
 
-### Java Date & Time
+## Java Date & Time
 
 In Java, the `java.util` package contains classes for date and time manipulation. These classes provide a platform-independent and comprehensive date and time model that can be used for a wide range of application.
 
-#### Date
+### Date
 
 The `java.util.Date` class represents date and time in java. It provides constructors and methods to deal with date and time in java.
 
@@ -625,227 +661,7 @@ The `Date` class supports two constructors as shown in the following table.
 
 | `Date(long millisec)`| This constructor accepts an argument that equals the number of milliseconds that have elapsed since midnight, January 1, 1970. |
 
-
-### Java Regular Expressions
-
-In Java, a regular expression is a sequence of characters that forms a search pattern. The search pattern can be used for text search and text replace operations.
-
-#### Regular Expression Methods
-
-The java.util.regex package primarily consists of the following three classes:
-
-- Pattern Class: A Pattern object is a compiled representation of a regular expression. The Pattern class provides no public constructors. To create a pattern, you must first invoke one of its public static compile() methods, which will then return a Pattern object. These methods accept a regular expression as the first argument.
-
-- Matcher Class: A Matcher object is the engine that interprets the pattern and performs match operations against an input string. Like the Pattern class, Matcher defines no public constructors. You obtain a Matcher object by invoking the matcher() method on a Pattern object.
-
-- PatternSyntaxException: A PatternSyntaxException object is an unchecked exception that indicates a syntax error in a regular expression pattern.
-
-#### Regular Expression Syntax
-
-A regular expression is a special sequence of characters that helps you match or find other strings or sets of strings, using a specialized syntax held in a pattern. They can be used to search, edit, or manipulate text and data.
-
-The Java Regex or Regular Expression is an API to define a pattern for searching or manipulating strings. It is widely used to define the constraint on strings such as password and email validation. After learning Java regex tutorial, you will be able to test your regular expressions by the Java Regex Tester Tool.
-
-The Java Regex or Regular Expression is an API to define a pattern for searching or manipulating strings. It is widely used to define the constraint on strings such as password and email validation. After learning Java regex tutorial, you will be able to test your regular expressions by the Java Regex Tester Tool.
-
-#### Regex Character classes
-
-| Character Class | Description                                                                            
-| [:upper:]       | Defines an upper-case alphabetic character: [A-Z]                                      
-| [:lower:]       | Defines a lower-case alphabetic character: [a-z]                                      
-| [:alpha:]       | Defines an alphabetic character: [a-zA-Z]                                             
-| [:digit:]       | Defines a digit: [0-9]                                                                
-| [:xdigit:]      | Defines a hexadecimal digit: [A-Fa-f0-9]                                             
-| [:alnum:]       | Defines an alphanumeric character: [a-zA-Z0-9]                                       
-| [:punct:]       | Defines a punctuation character: One of !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
-| [:graph:]       | Defines a visible character: [[:alnum:][:punct:]]                                    
-| [:print:]       | Defines a printable character: [[:alnum:][:punct:][:space:]]                         
-| [:blank:]       | Defines a space or tab character: [ \t]                                              
-| [:space:]       | Defines a whitespace character: [ \t\n\x0B\f\r]                                      
-| [:cntrl:]       | Defines a control character: [\x00-\x1F\x7F]                                         
-| [:ascii:]       | Defines an ASCII character: [\x00-\x7F]                                              
-| [:word:]        | Defines a word character: [A-Za-z0-9_]                                               
-| [:java:]        | Defines a Java identifier: [A-Za-z0-9_$]                                             
-| [:javastart:]   | Defines the start of a Java identifier: [A-Za-z$_]                                   
-| [:javapart:]    | Defines the part of a Java identifier: [A-Za-z0-9$_]                                 
-
-#### Regex Quantifiers
-
-| Character | Description                                                                            
-| X?        | X occurs once or not at all.                                                         
-| X+        | X occurs once or more times.                                                         
-| X*        | X occurs zero or more times.                                                         
-| X{n}      | X occurs n times only.                                                               
-| X{n,}     | X occurs n or more times.                                                            
-| X{y,z}    | X occurs at least y times but less than z times.                                     
-
-#### Regex Metacharacters
-
-| Character | Description                                                                            
-| \d        | Any digit, short for [0-9]                                                            
-| \D        | A non-digit, short for [^0-9]                                                         
-| \s        | A whitespace character, short for [ \t\n\x0B\f\r]                                     
-| \S        | A non-whitespace character, short for [^\s]                                            
-| \w        | A word character, short for [a-zA-Z_0-9]                                              
-| \W        | A non-word character [^\w]                                                            
-
-#### Regex Logical Operators
-
-| Character | Description                                                                            
-| XY        | X followed by Y                                                                        
-| X|Y       | Either X or Y                                                                          
-| (X)       | X, as a capturing group                                                                
-| (?im)X    | X, as a non-capturing group                                                            
-| (?im:X)   | X, as a non-capturing group with the given flags                                      
-| X(?=Y)    | X, if followed by Y                                                                   
-| X(?!Y)    | X, if not followed by Y                                                               
-
-#### Regex POSIX Character Classes
-
-| Character | Description                                                                            
-| [:lower:] | All lower-case alphabetic characters: [a-z]                                            
-| [:upper:] | All upper-case alphabetic characters: [A-Z]                                            
-| [:alpha:] | All alphabetic characters: [[:lower:][:upper:]]                                       
-| [:digit:] | All digits: [0-9]                                                                     
-| [:alnum:] | All alphanumeric characters: [[:alpha:][:digit:]]                                     
-| [:xdigit:]| All hexadecimal digits: [0-9a-fA-F]                                                   
-| [:punct:] | All punctuation characters: One of !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~                   
-| [:graph:] | All visible characters: [[:alnum:][:punct:]]                                          
-| [:print:] | All printable characters: [[:alnum:][:punct:][:space:]]                               
-| [:blank:] | All space or tab characters: [ \t]                                                    
-| [:space:] | All whitespace characters: [ \t\n\x0B\f\r]                                            
-| [:cntrl:] | All control characters: [\x00-\x1F\x7F]                                               
-| [:ascii:] | All ASCII characters: [\x00-\x7F]                                                     
-| [:word:]  | All word characters: [A-Za-z0-9_]                                                     
-
-#### Regex Character Classes
-
-| Character Class | Description                                                                            
-| [abc]           | a, b, or c (simple class)                                                              
-| [^abc]          | Any character except a, b, or c (negation)                                             
-| [a-zA-Z]        | a through z or A through Z, inclusive (range)                                          
-| [a-d[m-p]]      | a through d, or m through p: [a-dm-p] (union)                                          
-| [a-z&&[def]]    | d, e, or f (intersection)                                                              
-| [a-z&&[^bc]]    | a through z, except for b and c: [ad-z] (subtraction)                                  
-| [a-z&&[^m-p]]   | a through z, and not m through p: [a-lq-z](subtraction)                                
-| \x              | Character x                                                                            
-| \n              | Newline (0x0a)                                                                         
-| \r              | Carriage return (0x0d)                                                                 
-| \f              | Formfeed (0x0c)                                                                        
-| \t              | Tab                                                                                    
-| \v              | Vertical tab (0x0b)                                                                    
-| \e              | Escape (0x1b)                                                                          
-| \s              | A whitespace character: [ \t\n\x0B\f\r]                                               
-| \S              | A non-whitespace character: [^\s]                                                      
-| \d              | A digit: [0-9]                                                                         
-| \D              | A non-digit: [^0-9]                                                                    
-| \w              | A word character: [a-zA-Z_0-9]                                                         
-| \W              | A non-word character: [^\w]                                                            
-
-#### Regex Boundary Matchers
-
-| Character | Description                                                                            
-| ^         | The beginning of a line                                                                
-| $         | The end of a line                                                                      
-| \b        | A word boundary                                                                        
-| \B        | A non-word boundary                                                                    
-| \A        | The beginning of the input                                                             
-| \G        | The end of the previous match                                                          
-| \Z        | The end of the input but for the final terminator, if any                              
-| \z        | The end of the input                                                                   
-
-#### Regex Greedy Quantifiers
-
-| Character | Description                                                                            
-| X?        | X occurs once or not at all.                                                           
-| X*        | X occurs zero or more times.                                                           
-| X+        | X occurs once or more times.                                                           
-| X{n}      | X occurs n times only.                                                                 
-| X{n,}     | X occurs n or more times.                                                              
-| X{n,y}    | X occurs at least n times but less than y times.                                       
-
-#### Regex Possessive Quantifiers
-
-| Character | Description                                                                            
-| X??       | X occurs once or not at all.                                                           
-| X*?       | X occurs zero or more times.                                                           
-| X+?       | X occurs once or more times.                                                           
-| X{n}?     | X occurs n times only.                                                                 
-| X{n,}?    | X occurs n or more times.                                                              
-| X{n,y}?   | X occurs at least n times but less than y times.                                       
-
-#### Regex Reluctant Quantifiers
-
-| Character | Description                                                                            
-| X?+       | X occurs once or not at all.                                                           
-| X*+       | X occurs zero or more times.                                                           
-| X++       | X occurs once or more times.                                                           
-| X{n}+     | X occurs n times only.                                                                 
-| X{n,}+    | X occurs n or more times.                                                              
-| X{n,y}+   | X occurs at least n times but less than y times.                                       
-
-#### Regex Logical Operators
-
-| Character | Description                                                                            
-| XY        | X followed by Y                                                                        
-| X|Y       | Either X or Y                                                                          
-| (X)       | X, as a capturing group                                                                
-| (?im)X    | X, as a non-capturing group                                                            
-| (?im:X)   | X, as a non-capturing group with the given flags                                      
-| X(?=Y)    | X, if followed by Y                                                                   
-| X(?!Y)    | X, if not followed by Y                                                               
-
-#### Regex Backslash Sequences
-
-| Character | Description                                                                            
-| \a        | The ASCII bell character (0x07)                                                        
-| \e        | The ASCII escape character (0x1b)                                                      
-| \f        | The ASCII form feed character (0x0c)                                                   
-| \n        | The ASCII linefeed character (0x0a)                                                    
-| \r        | The ASCII carriage return character (0x0d)                                             
-| \t        | The ASCII horizontal tab character (0x09)                                              
-| \xhh      | The ASCII character corresponding to the octal number hh                                
-| \uhhhh    | The ASCII character corresponding to the hexadecimal number hhhh                        
-| \x{h...h} | The ASCII character corresponding to the hexadecimal number h...h                       
-| \Q...\E   | Nothing, but quotes all characters until \E                                             
-
-#### Regex Backslash Sequences
-
-| Character | Description                                                                            
-| \a        | The ASCII bell character (0x07)                                                        
-| \e        | The ASCII escape character (0x1b)                                                      
-| \f        | The ASCII form feed character (0x0c)                                                   
-| \n        | The ASCII linefeed character (0x0a)                                                    
-| \r        | The ASCII carriage return character (0x0d)                                             
-| \t        | The ASCII horizontal tab character (0x09)                                              
-| \xhh      | The ASCII character corresponding to the octal number hh                                
-| \uhhhh    | The ASCII character corresponding to the hexadecimal number hhhh                        
-| \x{h...h} | The ASCII character corresponding to the hexadecimal number h...h                       
-| \Q...\E   | Nothing, but quotes all characters until \E                                             
-
-#### Regex Backslash Sequences
-
-| Character | Description                                                                            
-| \a        | The ASCII bell character (0x07)                                                        
-| \e        | The ASCII escape character (0x1b)                                                      
-| \f        | The ASCII form feed character (0x0c)                                                   
-| \n        | The ASCII linefeed character (0x0a)                                                    
-| \r        | The ASCII carriage return character (0x0d)                                             
-| \t        | The ASCII horizontal tab character (0x09)                                              
-| \xhh      | The ASCII character corresponding to the octal number hh                                
-| \uhhhh    | The ASCII character corresponding to the hexadecimal number hhhh                        
-| \x{h...h} | The ASCII character corresponding to the hexadecimal number h...h                       
-| \Q...\E   | Nothing, but quotes all characters until \E                                             
-
-#### Regex Backslash Sequences
-
-| Character | Description                                                                            
-| \a        | The ASCII bell character (0x07)                                                        
-| \e        | The ASCII escape character (0x1b)                                                      
-| \f        | The ASCII form feed character (0x0c)                                                   
-| \n        | The ASCII linefeed character (0x0a)
-
-### Java Methods
+## Java Methods
 In Java, a method is a set of code which is referred to by name and can be called (invoked) at any point in a program simply by utilizing the method's name.
 
 #### Declaring Methods
@@ -882,7 +698,7 @@ public class Main {
 ```
 In this example, the method `myMethod()` is called from the `main()` method.
 
-#### Method Parameters
+## Method Parameters
 
 Information can be passed to methods as parameter. Parameters act as variables inside the method.
 
@@ -923,7 +739,7 @@ public class Main {
 
 Java allows method overloading, that is, methods within the same class that share the same name, as long as their parameter declarations are different.
 
-#### Recursion
+## Recursion
 
 In Java, a method that calls itself is known as a recursive method. And, this technique is known as recursion.
 
@@ -944,11 +760,11 @@ public class Main {
     }
 }
 ```
-#### Passing Parameters by Value
+## Passing Parameters by Value
 
 In Java, parameters of primitive data type are passed into methods by value. This means that when a method returns, the passed-in parameter still exists and retains its original value.
 
-#### Passing Parameters by Reference
+## Passing Parameters by Reference
 
 In Java, parameters of reference data type are passed into methods by value. This means that when a method returns, the passed-in reference still references the same object as before. However, the values of the object's fields can be changed in the method, if they have the proper access level.
 
@@ -956,14 +772,14 @@ In Java, parameters of reference data type are passed into methods by value. Thi
 
 The java.io package contains nearly every class you might ever need to perform input and output (I/O) in Java. All these streams represent an input source and an output destination. The stream in the java.io package supports many data such as primitives, object, localized characters, etc.
 
-#### Stream
+### Stream
 
 A stream can be defined as a sequence of data. There are two kinds of Streams −
 
 - **InPutStream**: The InputStream is used to read data from a source.
 - **OutPutStream**: The OutputStream is used for writing data to a destination.
 
-#### Byte Streams
+### Byte Streams
 
 Java byte streams are used to perform input and output of 8-bit bytes. Though there are many classes related to byte streams but the most frequently used classes are, `FileInputStream` and `FileOutputStream`. Following is an example which makes use of these two classes to copy an input file into an output file:
 
@@ -995,7 +811,7 @@ public class CopyFile {
     }
 }
 ```
-#### Character Streams
+### Character Streams
 
 Java Byte streams are used to perform input and output of 8-bit bytes, whereas Java Character streams are used to perform input and output for 16-bit unicode. Though there are many classes related to character streams but the most frequently used classes are, `FileReader` and `FileWriter`. Following is an example which makes use of these two classes to copy an input file into an output file:
 
@@ -1089,51 +905,169 @@ The File class defines the following methods for finding out about a file or dir
 
 | Method                       | Description                                                                            
 | canExecute()                 | Tests whether the application can execute the file denoted by this abstract pathname.
-| canRead()                    | Tests whether the application can read the file denoted by this abstract pathname.    
-| canWrite()                   | Tests whether the application can modify the file denoted by this abstract pathname.  
-| compareTo(File pathname)     | Compares two abstract pathnames lexicographically.                                    
-| createNewFile()              | Atomically creates a new, empty file named by this abstract pathname if and only if a file with this name does not yet exist. 
-| delete()                     | Deletes the file or directory denoted by this abstract pathname.                       
-| equals(Object obj)           | Tests this abstract pathname for equality with the given object.                       
-| exists()                     | Tests whether the file or directory denoted by this abstract pathname exists.           
-| getAbsolutePath()            | Returns the absolute pathname string of this abstract pathname.                        
-| getCanonicalFile()           | Returns the canonical form of this abstract pathname.                                  
-| getCanonicalPath()           | Returns the canonical pathname string of this abstract pathname.                       
-| getName()                    | Returns the name of the file or directory denoted by this abstract pathname.            
+
+
+| canRead()                    | Tests whether the application can read the file denoted by this abstract pathname. 
+
+
+| canWrite()                   | Tests whether the application can modify the file denoted by this abstract pathname. 
+
+
+| compareTo(File pathname)     | Compares two abstract pathnames lexicographically.                               
+
+
+| createNewFile()              | Atomically creates a new, empty file named by this abstract pathname if and only if a file with this name does not yet exist.
+
+
+| delete()                     | Deletes the file or directory denoted by this abstract pathname.                   
+
+
+| equals(Object obj)           | Tests this abstract pathname for equality with the given object.                  
+
+
+| exists()                     | Tests whether the file or directory denoted by this abstract pathname exists.     
+
+
+| getAbsolutePath()            | Returns the absolute pathname string of this abstract pathname.                    
+
+
+| getCanonicalFile()           | Returns the canonical form of this abstract pathname.                              
+
+
+| getCanonicalPath()           | Returns the canonical pathname string of this abstract pathname.                   
+
+
+| getName()                    | Returns the name of the file or directory denoted by this abstract pathname.       
+
+
 | getParent()                  | Returns the pathname string of this abstract pathname's parent, or null if this pathname does not name a parent directory. 
+
+
 | getParentFile()              | Returns the abstract pathname of this abstract pathname's parent, or null if this pathname does not name a parent directory. 
-| getPath()                    | Converts this abstract pathname into a pathname string.                                 
-| hashCode()                   | Computes a hash code for this abstract pathname.                                        
-| isAbsolute()                 | Tests whether this abstract pathname is absolute.                                       
-| isDirectory()                | Tests whether the file denoted by this abstract pathname is a directory.                
-| isFile()                     | Tests whether the file denoted by this abstract pathname is a normal file.              
-| isHidden()                   | Tests whether the file named by this abstract pathname is a hidden file.                
-| lastModified()               | Returns the time that the file denoted by this abstract pathname was last modified.     
+
+
+| getPath()                    | Converts this abstract pathname into a pathname string.                             
+
+
+| hashCode()                   | Computes a hash code for this abstract pathname.                                  
+
+
+| isAbsolute()                 | Tests whether this abstract pathname is absolute.                                   
+
+
+| isDirectory()                | Tests whether the file denoted by this abstract pathname is a directory.           
+
+
+| isFile()                     | Tests whether the file denoted by this abstract pathname is a normal file.         
+
+
+| isHidden()                   | Tests whether the file named by this abstract pathname is a hidden file.           
+
+
+| lastModified()               | Returns the time that the file denoted by this abstract pathname was last modified.  
+
+
 | length()                     | Returns the length of the file denoted by this abstract pathname.                       
+
+
 | list()                       | Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname. 
+
+
 | list(FilenameFilter filter)  | Returns an array of strings naming the files and directories in the directory 
 denoted by this abstract pathname that satisfy the specified filter.
+
+
 | listFiles()                  | Returns an array of abstract pathnames denoting the files in the directory denoted by this abstract pathname. 
+
+
 | listFiles(FileFilter filter) | Returns an array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter. 
+
+
 | listFiles(FilenameFilter filter) | Returns an array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter. 
-| mkdir()                      | Creates the directory named by this abstract pathname.                                  
+
+
+| mkdir()                      | Creates the directory named by this abstract pathname.                               
+
+
 | mkdirs()                     | Creates the directory named by this abstract pathname, including any necessary but nonexistent parent directories. 
-| renameTo(File dest)          | Renames the file denoted by this abstract pathname.                                    
+
+
+| renameTo(File dest)          | Renames the file denoted by this abstract pathname.                                
+
+
 | setExecutable(boolean executable) | A convenience method to set the owner's execute permission for this abstract pathname. 
+
+
 | setExecutable(boolean executable, boolean ownerOnly) | A convenience method to set the owner's or everybody's execute permission for this abstract pathname. 
+
+
 | setLastModified(long time)   | Sets the last-modified time of the file or directory named by this abstract pathname.   
+
+
 | setReadable(boolean readable) | A convenience method to set the owner's read permission for this abstract pathname.   
+
+
 | setReadable(boolean readable, boolean ownerOnly) | A convenience method to set the owner's or everybody's read permission for this abstract pathname. 
+
+
 | setReadOnly()                | Marks the file or directory named by this abstract pathname so that only read operations are allowed. 
+
+
 | setWritable(boolean writable) | A convenience method to set the owner's write permission for this abstract pathname. 
+
+
 | setWritable(boolean writable, boolean ownerOnly) | A convenience method to set the owner's or everybody's write permission for this abstract pathname. 
-| toPath()                     | Returns a java.nio.file.Path object constructed from the this abstract path.           
+
+
+| toPath()                     | Returns a java.nio.file.Path object constructed from the this abstract path.       
+
+
 | toString()                   | Returns the pathname string of this abstract pathname.                                 
-| toURI()                      | Constructs a file: URI that represents this abstract pathname.                         
+
+
+| toURI()                      | Constructs a file: URI that represents this abstract pathname.                     
+
+
 | toURL()                      | Deprecated. This method does not automatically escape characters that are illegal in URLs. It is recommended that new code convert an abstract pathname into a URL by first converting it into a URI, via the toURI method, and then converting the URI into a URL via the URI.toURL method. 
+
+
 | static File[] listRoots()    | List the available filesystem roots.                                                   
 
-#### File Class Example
+### File Class Example
+
+```java
+
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        File file = new File("C:\\Users\\MyName\\Documents\\filename.txt");
+        if (file.exists()) {
+            System.out.println("File exists");
+        } else {
+            System.out.println("File not found!");
+        }
+    }
+}
+```
+### File Class Example
+
+```java
+
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        File file = new File("C:\\Users\\MyName\\Documents\\filename.txt");
+        if (file.exists()) {
+            System.out.println("File exists");
+        } else {
+            System.out.println("File not found!");
+        }
+    }
+}
+```
+### File Class Example
 
 ```java
 
@@ -1235,50 +1169,16 @@ public class Main {
     }
 }
 ```
-#### File Class Example
 
-```java
-
-import java.io.File;
-
-public class Main {
-    public static void main(String[] args) {
-        File file = new File("C:\\Users\\MyName\\Documents\\filename.txt");
-        if (file.exists()) {
-            System.out.println("File exists");
-        } else {
-            System.out.println("File not found!");
-        }
-    }
-}
-```
-#### File Class Example
-
-```java
-
-import java.io.File;
-
-public class Main {
-    public static void main(String[] args) {
-        File file = new File("C:\\Users\\MyName\\Documents\\filename.txt");
-        if (file.exists()) {
-            System.out.println("File exists");
-        } else {
-            System.out.println("File not found!");
-        }
-    }
-}
-```
-
-### Java Exceptions
+## Java Exceptions
 
 In Java, an exception is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime.
 
-#### Exception Handling
+### Exception Handling
 
 Java provides a robust and object-oriented solution to handle exception scenarios known as Java Exception Handling. The core advantage of exception handling is to maintain the normal flow of the application. An exception normally disrupts the normal flow of the application that is why we use exception handling.
 
-#### Exception Hierarchy
+### Exception Hierarchy
 
 All exception classes are subtypes of the `java.lang.Exception` class. The exception class is a subclass of the Throwable class. Other than the exception class, there is another subclass called Error which is derived from the Throwable class.
 
@@ -1289,7 +1189,7 @@ Exceptions are conditions that occur because of bad input or human error etc. e.
 - **Checked Exceptions**: The classes that extend Throwable class except RuntimeException and Error are known as checked exceptions e.g. IOException, SQLException etc. Checked exceptions are checked at compile-time.
 - **Unchecked Exceptions**: The classes that extend RuntimeException are known as unchecked exceptions e.g. ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
 
-#### Catching Exceptions
+### Catching Exceptions
 
 The try statement allows you to define a block of code to be tested for errors while it is being executed.
 
@@ -1306,7 +1206,7 @@ catch(Exception e) {
   //  Block of code to handle errors
 }
 ```
-#### Multiple Catch Blocks
+### Multiple Catch Blocks
 
 A try block can be followed by one or more catch blocks. Each catch block must contain a different exception handler. When an exception occurs in the try block, the corresponding catch block that handles that particular exception executes. Here is an example that demonstrates this:
 
@@ -1325,7 +1225,7 @@ public class Main {
     }
 }
 ```
-#### The finally Keyword
+### The finally Keyword
 
 The finally statement lets you execute code, after try...catch, regardless of the result.
 
@@ -1346,7 +1246,7 @@ public class Main {
     }
 }
 ```
-#### Throw
+### Throw
 
 The throw statement allows you to create a custom error. The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc.
 
@@ -1371,11 +1271,11 @@ public class Main {
     }
 }
 ```
-#### Throws
+### Throws
 
 The throws keyword indicates that a method may throw an exception. It gives an information to the programmer that there may occur an exception so it is better for the programmer to provide the exception handling code so that normal flow can be maintained.
 
-#### Java Finally
+### Java Finally
 
 The finally keyword is used to create a block of code that follows a try block. A finally block of code always executes, whether or not an exception has occurred.
 
@@ -1389,7 +1289,7 @@ finally {
   // Block of code to be executed
 }
 ```
-#### Java Try with Resources
+## Java Try with Resources
 
 Java provides a new feature called try-with-resources. This feature enables us to declare resources to be used in a try block with the assurance that the resources will be closed when after the execution of that block.
 
@@ -2076,9 +1976,11 @@ The Date class supports two constructors as shown in the following table.
 
 | Constructor                    | Description                                                                            
 | Date()                         | This constructor initializes the object with the current date and time. 
+
+
 | Date(long millisec)            | This constructor accepts an argument that equals the number of milliseconds that have elapsed since midnight, January 1, 1970. 
 
-#### Getting Current Date and Time
+## Getting Current Date and Time
 
 The `java.util` package contains three classes to represent date and time. These classes are `java.util.Date`, `java.util.Calendar` and `java.util.TimeZone`.
 
@@ -2397,7 +2299,7 @@ public class Main {
 }
 ```
 
-### java Inheritance
+## Java Inheritance
 
 Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.
 
@@ -2557,7 +2459,7 @@ public class Main {
 }
 ```
 
-### Java Polymorphism
+## Java Polymorphism
 
 Polymorphism in Java is a concept by which we can perform a single action in different ways.
 
@@ -2677,7 +2579,47 @@ public class Main {
     }
 }
 ```
-#### Java Runtime Polymorphism Example
+### Java Runtime Polymorphism Example
+
+```java
+
+class Bank {
+    float getRateOfInterest() {
+        return 0;
+    }
+}
+
+class SBI extends Bank {
+    float getRateOfInterest() {
+        return 8.4f;
+    }
+}
+
+class ICICI extends Bank {
+    float getRateOfInterest() {
+        return 7.3f;
+    }
+}
+
+class AXIS extends Bank {
+    float getRateOfInterest() {
+        return 9.7f;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bank b;
+        b = new SBI();
+        System.out.println("SBI Rate of Interest: " + b.getRateOfInterest());
+        b = new ICICI();
+        System.out.println("ICICI Rate of Interest: " + b.getRateOfInterest());
+        b = new AXIS();
+        System.out.println("AXIS Rate of Interest: " + b.getRateOfInterest());
+    }
+}
+```
+### Java Runtime Polymorphism Example
 
 ```java
 
@@ -2797,48 +2739,8 @@ public class Main {
     }
 }
 ```
-#### Java Runtime Polymorphism Example
 
-```java
-
-class Bank {
-    float getRateOfInterest() {
-        return 0;
-    }
-}
-
-class SBI extends Bank {
-    float getRateOfInterest() {
-        return 8.4f;
-    }
-}
-
-class ICICI extends Bank {
-    float getRateOfInterest() {
-        return 7.3f;
-    }
-}
-
-class AXIS extends Bank {
-    float getRateOfInterest() {
-        return 9.7f;
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Bank b;
-        b = new SBI();
-        System.out.println("SBI Rate of Interest: " + b.getRateOfInterest());
-        b = new ICICI();
-        System.out.println("ICICI Rate of Interest: " + b.getRateOfInterest());
-        b = new AXIS();
-        System.out.println("AXIS Rate of Interest: " + b.getRateOfInterest());
-    }
-}
-```
-
-### Java Abstraction
+## Java Abstraction
 
 Abstraction is a process of hiding the implementation details and showing only functionality to the user.
 
@@ -2865,7 +2767,7 @@ A class which is declared as abstract is known as an abstract class. It can have
 - It can have constructors and static methods also.
 - It can have final methods which will force the subclass not to change the body of the method.
 
-#### Abstract class in Java Example
+## Abstract class in Java Example
 
 ```java
 
@@ -2884,7 +2786,7 @@ class Honda4 extends Bike {
     }
 }
 ```
-#### Abstract class in Java Example
+## Abstract class in Java Example
 
 ```java
 
