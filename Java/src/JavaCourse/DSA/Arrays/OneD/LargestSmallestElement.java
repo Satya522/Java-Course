@@ -3,7 +3,7 @@ package JavaCourse.DSA.Arrays.OneD;
 
 import java.util.Scanner;
 
-public class LargestValueInArray {
+public class LargestSmallestElement {
 
     public static int  findLargestValue(int[] array)
     {
