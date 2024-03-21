@@ -1,7 +1,7 @@
 package JavaCourse.DSA.Arrays.OneD;
 public class TrappingWater {
 
-    public static int trappedWater(int[] height){
+    public static int trap(int[] height){
         int n= height.length;
         int[] leftMax = new int[n];
         leftMax[0]=height[0];
@@ -13,17 +13,17 @@ public class TrappingWater {
         for(int i=n-2;i>=0;i--){
             rightMax[i]=Math.max(rightMax[i+1],height[i]);
         }
-        int trappedWater=0;
+        int trap=0;
         int width=1;
         for(int i=0;i<n;i++){
             int waterLevel = Math.min(leftMax[i],rightMax[i]);
-            trappedWater += (waterLevel-height[i])*width;
+            trap += (waterLevel-height[i])*width;
         }
-        return trappedWater;
+        return trap;
     }
 
     public static void main(String[] args) {
         int[] height = {4,2,0,6,3,2,5};
-        System.out.println("Trapped water is: " + trappedWater(height));
+        System.out.println("Trapped water is: " + trap(height));
     }
 }

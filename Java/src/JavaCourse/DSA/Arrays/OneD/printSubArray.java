@@ -6,11 +6,9 @@ public class printSubArray {
         int totalSubArray =0;
         for(int i=0;i<arr.length;i++)
         {
-          int start = i;
           for (int j=i;j<arr.length;j++)
           {
-              int end =j;
-              for(int k=start;k<=end;k++)
+              for(int k=i;k<=j;k++  )
               {
                   System.out.print(arr[k]+" ");
               }
