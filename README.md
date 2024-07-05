@@ -1,50 +1,77 @@
-
-
 # Welcome to Java-Course
-This is all about java (core + Advance)  and as well as Data Structure in java
-
+This course covers Core Java, Advanced Java, and Data Structures and Algorithms in Java.
 
 ## Table of Contents
-  - [Java Introduction](#java-introduction)
-  - [Java Features](#java-features)
-  - [Java History](#java-history)
-  - [Java Environment Setup](#java-environment-setup)
-  - [Java Basic Syntax](#java-basic-syntax)
-  - [Java Object & Classes](#java-object-&-classes)
-  - [Java Basic Data Types](#Java-Basic-Datatypes)
-  - [Java Variable Types](#java-variable-types)
-  - [Java Modifier Types](#java-modifier-types)
-  - [Java Basic Operators](#java-basic-operators)
-  - [Java Loop Control](#java-loop-control)
-  - [Java Decision-Making](#java-decision-making)
-  - [Java Numbers](#java-numbers)
-  - [Java Characters](#java-characters)
-  - [Java Strings](#java-strings)
-  - [Java Arrays](#java-arrays)
-  - [Java Date & Time](#java-date-&-time)
-  - [Java Regular Expressions](#java-regular-expressions)
-  - [Java Methods](#java-methods)
-  - [Java Files & I/O](#java-files-&-i/o)
-  - [Java Exceptions](#java-exceptions)
-  - [Java Inner classes](#java-inner-classes)
-  - [Java Inheritance](#java-inheritance)
-  - [Java Overriding](#java-overriding)
-  - [Java Polymorphism](#java-polymorphism)
-  - [Java Abstraction](#java-abstraction)
-  - [Java Encapsulation](#java-encapsulation)
-  - [Java Interfaces](#java-interfaces)
-  - [Java Packages](#java-packages)
-  - [Java Data Structures](#java-data-structures)
-  - [Java Collections](#java-collections)
-  - [Java Generics](#java-generics)
-  - [Java Serialization](#java-serialization)
-  - [Java Networking](#java-networking)
-  - [Java Sending Email](#java-sending-email)
-  - [Java Multithreading](#java-multithreading)
-  - [Java Applet Basics](#java-applet-basics)
-  - [Java Documentation](#java-documentation)
-  - [Java Internationalization](#java-internationalization)
 
+### Core Java
+- [Java Introduction](#java-introduction)
+- [Java Features](#java-features)
+- [Java History](#java-history)
+- [Java Environment Setup](#java-environment-setup)
+- [Java Basic Syntax](#java-basic-syntax)
+- [Java Basic Data Types](#Java-Basic-Datatypes)
+- [Java Variable Types](#java-variable-types)
+- [Java Modifier Types](#java-modifier-types)
+- [Java Basic Operators](#java-basic-operators)
+- [Java Loop Control](#java-loop-control)
+- [Java Decision-Making](#java-decision-making)
+- [Java Numbers](#java-numbers)
+- [Java Characters](#java-characters)
+- [Java Strings](#java-strings)
+- [Java Arrays](#java-arrays)
+- [Java Date & Time](#java-date-&-time)
+- [Java Regular Expressions](#java-regular-expressions)
+- [Java Methods](#java-methods)
+- [Java Files & I/O](#java-files-&-i/o)
+- [Java Exceptions](#java-exceptions)
+
+#### OOPs Concepts
+- [Java Object & Classes](#java-object-&-classes)
+- [Java Inheritance](#java-inheritance)
+- [Java Overriding](#java-overriding)
+- [Java Polymorphism](#java-polymorphism)
+- [Java Abstraction](#java-abstraction)
+- [Java Encapsulation](#java-encapsulation)
+- [Java Interfaces](#java-interfaces)
+
+### Java Packages
+- [Java Packages](#java-packages)
+
+### Advanced Java
+- [Java Data Structures](#java-data-structures)
+- [Java Collections](#java-collections)
+- [Java Generics](#java-generics)
+- [Java Serialization](#java-serialization)
+- [Java Networking](#java-networking)
+- [Java Sending Email](#java-sending-email)
+- [Java Multithreading](#java-multithreading)
+- [Java Applet Basics](#java-applet-basics)
+- [Java Documentation](#java-documentation)
+- [Java Internationalization](#java-internationalization)
+
+### Data Structures and Algorithms in Java
+- [Arrays](#arrays)
+- [Linked Lists](#linked-lists)
+- [Stacks](#stacks)
+- [Queues](#queues)
+- [Trees](#trees)
+- [Binary Trees](#binary-trees)
+- [Binary Search Trees](#binary-search-trees)
+- [Heaps](#heaps)
+- [Graphs](#graphs)
+- [Hashing](#hashing)
+- [Sorting Algorithms](#sorting-algorithms)
+- [Searching Algorithms](#searching-algorithms)
+- [Dynamic Programming](#dynamic-programming)
+- [Greedy Algorithms](#greedy-algorithms)
+- [Divide and Conquer](#divide-and-conquer)
+- [Backtracking](#backtracking)
+- [String Algorithms](#string-algorithms)
+- [Graph Algorithms](#graph-algorithms)
+- [Geometric Algorithms](#geometric-algorithms)
+- [Mathematical Algorithms](#mathematical-algorithms)
+- [Randomized Algorithms](#randomized-algorithms)
+- 
 ## 1.Introduction of Java
 Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs 
 on a variety of platforms, such as Windows, macOS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.
@@ -55,11 +82,11 @@ on a variety of platforms, such as Windows, macOS, and the various versions of U
 
 2. **Object-Oriented**: In Java, everything is an Object which has some data and behavior. Java can be easily extended as it is based on the Object model.
 
-3. **Platform Independent**: Unlike other programming languages such as C, C++ etc which are compiled into platform specific machines. Java is guaranteed to be write-once, run-anywhere language.
+3. **Platform Independent**: Unlike other programming languages such as C, C++ etc. which are compiled into platform specific machines. Java is guaranteed to be write-once, run-anywhere language.
 
-4. **Secured**: After compilation, Java code is converted into bytecode. This bytecode is not platform specific and it is secured because bytecode is completely different from native machine code.
+4. **Secured**: After compilation, Java code is converted into bytecode. This bytecode is not platform specific, and it is secured because bytecode is completely different from native machine code.
 
-5. **Robust**: Java makes an effort to eliminate error prone codes by emphasizing mainly on compile time error checking and runtime checking.
+5. **Robust**: Java makes an effort to eliminate error-prone codes by emphasizing mainly on compile time error checking and runtime checking.
 
 6. **Architecture-neutral**: There are no implementation dependent features (for example, the size of primitive types is set).
 
@@ -109,7 +136,7 @@ Java programming language uses this environment to run the program. The environm
   - Save and close the file.
   - Run the following command to reload the profile: `source ~/.bash_profile` (or `source ~/.bashrc`).
 
-2. **Update System PATH**:
+1. **Update System PATH**:
 
  - **Windows**:
   - Follow the same steps as setting JAVA_HOME until you reach 'Environment Variables'.
@@ -152,76 +179,6 @@ public class MyFirstJavaProgram {
 }
 ```
 In this example, `MyFirstJavaProgram` is the class name, `main` is the method name, `MyFirstJavaProgram.java` is the file name, and the program starts executing from the `main()` method.
-
-### java-object-&-classes
-In Java, everything is an Object. Objects are created from templates known as classes. In Java, an Object is an instance of a class.
-
-### Java Object & Classes
-
-In Java, everything is an Object. An Object is an instance (or a real-world entity) of a class. A class is a blueprint or prototype from which objects are created. 
-
-#### Class
-
-A class is a group of similar entities. It is a logical entity upon which we can't do anything. It is a template or blueprint from which objects are created. A class in Java can contain:
-
-- Fields
-- Methods
-- Constructors
-- Blocks
-- Nested class and interface
-
-Syntax to declare a class:
-
-## Java example
-```java
-class <class_name>{  
-    field;  
-    method;  
-}  
-```
-## Object
-
-An object is an instance of a class. It has state and behavior. The state is represented by attributes of an object (also known as data members or instance variables). The behavior is represented by methods of an object (also known as operations).
-
-An object is created using the 'new' keyword. For example:
-
-
-ClassName object = new ClassName();
-
-Here, `ClassName` is the name of the class, and `object` is the name of the object we created.
-
-## Example
-
-Here is an example of a class and an object in Java:
-
-#### JAVA PROGRAM
-```java
-class Dog {
-    String breed;
-    int age;
-    String color;
-
-    void barking() {
-    }
-
-    void hungry() {
-    }
-
-    void sleeping() {
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Dog myDog = new Dog();
-        myDog.barking();
-    }
-}
-
-```
-In this example, `Dog` is a class that includes fields (breed, age, color), and methods (barking, hungry, sleeping). `myDog` is an object of the `Dog` class.
-
-This section provides a basic understanding of Java objects and classes. It can be expanded with more details and examples as needed.
 
 ## Java Data Types
 In Java, there are eight basic data types, which are divided into two groups:

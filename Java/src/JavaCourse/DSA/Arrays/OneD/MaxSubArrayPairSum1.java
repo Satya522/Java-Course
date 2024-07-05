@@ -18,13 +18,6 @@ public class MaxSubArrayPairSum1 {
             int start =i;
             for(int j=i;j<arr.length;j++){
                 int end =j;
-//                currentSum=0;
-//                if (start==0){
-//                    currentSum=prefix[end];
-//                }
-//                else{
-//                    currentSum=prefix[end]-prefix[start-1];
-//                }
                  currentSum = start==0?prefix[end]:prefix[end]-prefix[start-1];
                  if(maxSum<currentSum){
                      maxSum=currentSum;

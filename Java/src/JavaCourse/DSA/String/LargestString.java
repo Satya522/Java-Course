@@ -1,4 +1,4 @@
-package JavaCourse.DSA.String;
+package src.JavaCourse.DSA.String;
 
 public class LargestString {
     public  static String largestString(String[] fruits){

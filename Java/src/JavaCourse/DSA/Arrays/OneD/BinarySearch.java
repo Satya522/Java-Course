@@ -1,4 +1,4 @@
-package JavaCourse.DSA.Arrays.OneD;
+package DSA.Arrays.OneD;
 
 import java.util.Scanner;
 

@@ -1,5 +1,5 @@
-package JavaCourse.DSA.Arrays.TwoD;
-// is method se tum kisi bhi type kaspiral matrix print kar sakte ho
+package src.JavaCourse.DSA.Arrays.TwoD;
+// is method se tum kisi bhi type ka spiral matrix print kar sakte ho
 public class SpiralMatrix {
     public static void printSpiral(int[][] arr){
         int startRow=0;

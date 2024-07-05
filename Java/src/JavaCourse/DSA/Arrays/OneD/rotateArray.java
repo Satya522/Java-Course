@@ -1,4 +1,4 @@
-package JavaCourse.DSA.Arrays.OneD;
+package src.JavaCourse.DSA.Arrays.OneD;
 
 public class rotateArray {
     public static void rotateOneTime(int[] arr){

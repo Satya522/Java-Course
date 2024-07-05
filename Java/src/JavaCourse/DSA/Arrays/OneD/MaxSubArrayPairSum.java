@@ -1,7 +1,7 @@
 // In This solution we use Brute Force approach to solve this problem
 // Time Complexity of this Solution is O(n^3) which is very bad
 
-package JavaCourse.DSA.Arrays.OneD;
+package src.JavaCourse.DSA.Arrays.OneD;
 public class MaxSubArrayPairSum {
     public static void maxSubArraySum(int[] arr){
         int maxSum =Integer.MIN_VALUE;
@@ -12,7 +12,6 @@ public class MaxSubArrayPairSum {
             {
                 int end = j;
                 int currentSum=0; // reset the value of currentSum to 0
-                System.out.print("Subarray Pair: ");
                 for(int k=start; k<=end;k++)
                 {
                     currentSum += arr[k];

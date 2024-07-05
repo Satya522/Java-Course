@@ -1,4 +1,4 @@
-package JavaCourse.DSA.String;
+package src.JavaCourse.DSA.String;
 
 public class Convert1stLetterToUpperCase {
 
