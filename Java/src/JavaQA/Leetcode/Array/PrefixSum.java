@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 public class PrefixSum {
     public static void maxSubarraySum(int[] arr){

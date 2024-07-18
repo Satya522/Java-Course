@@ -1,18 +1,18 @@
-package JavaCourse.DSA.Sorting;
+package src.JavaCourse.DSA.Sorting;
 public class SelectionSort {
     public static void selectionSort(int[] arr){
         int TotalSwaps=0;
        for(int i=0;i<arr.length-1;i++){
-           int minValue= i;
+           int minIndex= i;
            for(int j=i+1;j<arr.length;j++){
-              if(arr[minValue]>arr[j]){
-                  minValue=j;
+              if(arr[minIndex]>arr[j]){
+                  minIndex=j;
               }
            }
-           if(minValue!=0){
+           if(minIndex!=0){
                int temp = arr[i];
-               arr[i]=arr[minValue];
-               arr[minValue]=temp;
+               arr[i]=arr[minIndex];
+               arr[minIndex]=temp;
                TotalSwaps++;
            }
        }

@@ -1,4 +1,4 @@
-package JavaCourse.DSA.ArrayList;
+package src.JavaCourse.DSA.ArrayList;
 /*
 ArrayList in Java is a resizable array, which can be found in the java.util package. Unlike a traditional array that is
 fixed in size, an ArrayList grows its size automatically when new elements are added to it. It is part of the Java

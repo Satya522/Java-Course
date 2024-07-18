@@ -1,4 +1,4 @@
-package JavaCourse.DSA.Arrays.OneD;
+package src.JavaCourse.DSA.Arrays.OneD;
 
 public class printSubArray {
     public static void subArray(int[]arr)

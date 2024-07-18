@@ -1,4 +1,4 @@
-package JavaCourse.DSA.String;
+package src.JavaCourse.CoreJava.String;
 // Java me already substring method hota hai jo ki string ke kisi bhi part ko return karta hai
 // Syntax: String substring(int startIndex, int endIndex)
 // the startIndex is inclusive hota hai jiska mtlb hai ki vo index khud bhi include hoga lekin endIndex exclude hota

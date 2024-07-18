@@ -19,7 +19,7 @@ public class pairSum1 {
     public static boolean PairSumOptimized(ArrayList<Integer> list, int target){
         // 2 pointer approach   // TC = O(n)
         // list should be sorted
-        // if not sorted the list using Collections.sort(list;
+        // if not sorted the list using Collections.sort(list);
         int lp =0;
         int rp = list.size()-1;
         while(lp<rp){

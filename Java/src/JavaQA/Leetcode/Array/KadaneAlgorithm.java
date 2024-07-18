@@ -1,4 +1,4 @@
-package Arrays;
+package Array;
 
 public class KadaneAlgorithm {
     public static long kadanes(long[] number){

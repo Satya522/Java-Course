@@ -25,7 +25,7 @@ public class Palindrome {
     }
 
     public static void main(String[] args) {
-        String string = "noor";
-        System.out.println(isPalindrome(string));
+        String string = "naveen";
+        System.out.println(isPalindrome1(string));
     }
 }

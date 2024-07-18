@@ -1,4 +1,4 @@
-package src.JavaQA.Leetcode.Arrays;
+package Arrays;
 
 import java.util.Arrays;
 
@@ -13,7 +13,8 @@ public class Sort01 {
                     arr[left] = arr[right];
                     arr[right] = temp;
                 }
-                right--;            }
+                right--;
+            }
             else {
                 left++;
             }
