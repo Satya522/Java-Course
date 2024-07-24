@@ -1,14 +1,13 @@
-package src.JavaCourse.OOPS.Constructor.Default;
+package src.JavaCourse.OOPS.constructor.Parametrised;
 
 public class Account {
     private int accId;
     private String name;
     private double balance;
-    public Account(){
-        accId = 101;
-        name = "Amit";
-        balance = 10000.0;
-        System.out.println("Default Constructor Called...");
+    public Account(int id, String n, double bal){
+        accId = id;
+        name = n;
+        balance = bal;
     }
 
     public void showDetails(){
@@ -17,4 +16,3 @@ public class Account {
         System.out.println("Balance:"+balance);
     }
 }
-

@@ -4,22 +4,22 @@ public class Product {
     private int id;
     private String name;
     private double price;
-    public void setId(int i){
-        if(i<0){
+    public void setId(int id){
+        if(id<0){
             System.out.println("Id can not be Negative");
             return;
         }
-        id =i;
+        this.id =id;
     }
-    public void setName(String n){
-        name = n;
+    public void setName(String name){
+        this.name = name;
     }
-    public void setPrice(double p){
-        if (p<0){
+    public void setPrice(double price){
+        if (price<0){
             System.out.println("Price must be Positive");
             return;
         }
-        price = p;
+        this.price = price;
     }
     public  int getId(){
         return id;

@@ -1,4 +1,4 @@
-package src.JavaCourse.OOPS.Constructor.Parametrised;
+package src.JavaCourse.OOPS.constructor.Parametrised;
 
 public class UseAccount {
     public static void main(String[] args) {

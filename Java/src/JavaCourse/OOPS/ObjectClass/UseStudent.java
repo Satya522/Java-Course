@@ -1,5 +1,5 @@
 package src.JavaCourse.OOPS.ObjectClass;
-
+// UseStudent is a class name jise jo student class ka main class hai
 public class UseStudent {
     public static void main(String[] args) {
        Student s = new Student();
