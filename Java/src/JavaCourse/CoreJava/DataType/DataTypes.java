@@ -1,4 +1,4 @@
-package src.JavaCourse.CoreJava.JavaBasic.DataType;
+package CoreJava.DataType;
 // full details of data types and range read README.md file
 public class DataTypes {
     public static void main(String[] args) {

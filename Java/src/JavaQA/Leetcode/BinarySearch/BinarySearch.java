@@ -1,4 +1,4 @@
-package JavaQA.Leetcode.BinarySearch;
+package BinarySearch;
 //leetcode Binary search Problems
 //https://leetcode.com/problems/binary-search/?envType=study-plan-v2&envId=binary-search
 public class BinarySearch {

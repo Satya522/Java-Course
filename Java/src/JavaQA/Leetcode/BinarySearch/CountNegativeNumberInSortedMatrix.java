@@ -1,4 +1,4 @@
-package JavaQA.Leetcode.BinarySearch;
+package BinarySearch;
 
 public class CountNegativeNumberInSortedMatrix {
 
