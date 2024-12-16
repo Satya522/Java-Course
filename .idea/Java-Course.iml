@@ -9,6 +9,6 @@
     <content url="file://$MODULE_DIR$/out" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Java-Course" level="project" />
+    <orderEntry type="library" exported="" name="Java-Course" level="project" />
   </component>
 </module>
