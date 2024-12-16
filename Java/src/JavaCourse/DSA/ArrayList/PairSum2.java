@@ -19,7 +19,7 @@ public class PairSum2 {
     public static boolean PairSumOptimized(ArrayList<Integer> list, int target){
         // 2 pointer approach   // TC = O(n)
         // list should be sorted and rotated
-        // if not sorted the list using Collections.sort(list;
+        // if not sorted the list using Collections.sort(list);
         int pivot = findPivot(list);
         int lp = (pivot+1)%list.size();
         int rp = pivot;

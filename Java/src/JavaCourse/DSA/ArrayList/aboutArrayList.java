@@ -41,10 +41,10 @@ public class aboutArrayList {
         System.out.println("Elements in ArrayList: " + list);
 
         // Remove an element from ArrayList
-        //list.remove("Element2");
+        list.remove("Element2");
 
         // Display the elements in the ArrayList after removal
-        //System.out.println("Elements in ArrayList after removal: " + list);
+        System.out.println("Elements in ArrayList after removal: " + list);
 
         // Get an element from ArrayList
         String element = list.get(1);
