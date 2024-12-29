@@ -1,4 +1,4 @@
-package JavaCourse.DSA.Arrays.OneD;
+package src.JavaCourse.DSA.Arrays.OneD;
 
 public class find2ndSmallestElement {
     public static int find2ndSmallest(int[] arr){

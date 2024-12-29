@@ -1,0 +1,44 @@
+@startuml
+actor User
+
+User -> PassByValue : main(String[] args)
+activate PassByValue
+
+PassByValue -> PassByValue : System.out.println("Before increment the value of x is: " + x + " and y is: " + y)
+
+note right of PassByValue
+  Stack Memory:
+  int x = 20
+  int y = 30
+end note
+
+PassByValue -> PassByValue : increment(x, y)
+activate PassByValue
+
+note right of PassByValue
+  Stack Memory:
+  int a = 20
+  int b = 30
+end note
+
+PassByValue -> PassByValue : a = a + 5
+PassByValue -> PassByValue : b = b + 5
+
+note right of PassByValue
+  Stack Memory:
+  a = 25
+  b = 35
+end note
+
+deactivate PassByValue
+
+PassByValue -> PassByValue : System.out.println("After increment the value of x is: " + x + " and y is: " + y)
+
+note right of PassByValue
+  Stack Memory:
+  x = 20
+  y = 30
+end note
+
+deactivate PassByValue
+@enduml

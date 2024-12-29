@@ -1,6 +1,6 @@
 package src.JavaCourse.CoreJava.OOPS.Arguments;
-
-public class PassByValue {
+// this is example variable is passed by value
+public class Variables {
     public static void main(String[] args) {
         int x = 20;
         int y = 30;
@@ -19,8 +19,6 @@ public class PassByValue {
         // address
         b = b+5;  // compiler will increment the value of "b" by 5 --> 30+5 = 35 this value store at particular address
         // where "b" is pointing
-
-
         /*
         NOTE: In the increment method which is changed the value of a and b, but it will not affect the value of x
         and y.

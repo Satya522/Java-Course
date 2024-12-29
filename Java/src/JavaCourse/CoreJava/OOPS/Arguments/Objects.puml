@@ -1,0 +1,44 @@
+@startuml
+actor User
+
+User -> Objects : main(String[] args)
+activate Objects
+
+Objects -> Objects : new ArrayList<>()
+Objects -> myList : add(2)
+Objects -> myList : add(4)
+Objects -> Objects : System.out.println("Before increment the value of myList is: " + myList)
+
+note right of Objects
+  Stack Memory:
+  myList -> [2, 4]
+end note
+
+Objects -> Objects : increment(myList)
+activate Objects
+
+note right of Objects
+  Stack Memory:
+  myList -> [2, 4]
+end note
+
+Objects -> Objects : new ArrayList<>()
+Objects -> myList : add(3)
+Objects -> myList : add(5)
+
+note right of Objects
+  Stack Memory:
+  myList -> [3, 5]
+end note
+
+deactivate Objects
+
+Objects -> Objects : System.out.println("After increment the value of myList is: " + myList)
+
+note right of Objects
+  Stack Memory:
+  myList -> [2, 4]
+end note
+
+deactivate Objects
+@enduml

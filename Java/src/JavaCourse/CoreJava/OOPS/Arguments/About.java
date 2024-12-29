@@ -6,8 +6,8 @@ public class About {
     are passing an arguments.
 
     there is basically two types of arguments:
-    1. Actual Arguments
-    2. Formal Arguments
+    1. Actual Arguments /  arguments
+    2. Formal Arguments / parameters
 
     1. Actual Arguments: The data which we pass within the parenthesis while calling any method/function is called
     actual arguments.
@@ -16,7 +16,7 @@ public class About {
 
     Example:
     public class About {
-        public void add(int a, int b) {
+        public void add(int a, int b) { // a, b are formal arguments / parameters
             int sum = a + b;
             System.out.println("Sum is: " + sum);
         }
@@ -36,7 +36,7 @@ public class About {
     value is copied to the formal argument. So, the formal argument will have a copy of the actual argument value.
     so, if we change the value of the formal argument, it will not affect the actual argument value.
 
-           Example:
+    Example:
     public class About {
         public void add(int a, int b) {
             a = 20;
